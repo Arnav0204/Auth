@@ -1,8 +1,6 @@
 from datetime import datetime, timedelta
 from Auth.settings import JWT_CONF,SECRET_KEY
 from jose import jwt
-from django.conf import settings
-
 from rest_framework import authentication
 
 

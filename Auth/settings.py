@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'Auth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hack',
-        'USER': 'Ayan-sh03',
-        'PASSWORD': 'QtnLwPv2b8BC',
-        'HOST': 'ep-square-resonance-55814446.ap-southeast-1.aws.neon.tech',
-        'PORT': '5432',  # Assuming the default PostgreSQL port
+        'NAME': 'Auth',
+        'USER': 'testingginbackend',
+        'PASSWORD': 'DqX6jNUW5zpn',
+        'HOST': 'ep-tiny-flower-17293836.us-east-2.aws.neon.tech',
+        'PORT': '5432',  
         'OPTIONS': {
             'sslmode': 'require',
         },
