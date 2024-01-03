@@ -21,7 +21,7 @@ class RegistrationView(APIView):
             data['email']=account.email
 
         else:
-            data = serializer.errors
+            data = status.HTTP_400_BAD_REQUEST
 
         return Response(data)
     
