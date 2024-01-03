@@ -15,7 +15,7 @@ class RegistrationView(APIView):
         serializer = RegistrationSerializer(data=request.data)
         data={}
 
-        if serializer.is_valid():
+        if serializer.is_valid(raise_exception=True):
             account=serializer.save()
             data['username'] = account.username
             data['email']=account.email
@@ -30,7 +30,7 @@ class LoginView(APIView):
     serializer_class = LoginSerializer
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
-        serializer.is_valid(raise_exception=False)
+        serializer.is_valid(raise_exception=True)
         username = serializer.validated_data.get('username')
         password = serializer.validated_data.get('password')
         user = authenticate(request, username=username, password=password)
