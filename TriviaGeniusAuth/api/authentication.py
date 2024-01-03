@@ -2,10 +2,9 @@ from datetime import datetime, timedelta
 from Auth.settings import JWT_CONF,SECRET_KEY
 from jose import jwt
 from django.conf import settings
-# from django.contrib.auth import get_user_model
+
 from rest_framework import authentication
-from rest_framework.exceptions import AuthenticationFailed, ParseError
-from django.contrib.auth.models import User
+
 
 
 class JWTAuthentication(authentication.BaseAuthentication):
