@@ -20,17 +20,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-yyd*0!jn5tkwhspj1&rvb)al6b(+ay48s7r=(l)#qp6#j@qm+e'
+SECRET_KEY = 'secrettriviakey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-from datetime import timedelta
 
 JWT_CONF={
-    "TOKEN_LIFETIME_HOURS" : 5
+    "TOKEN_LIFETIME_HOURS" : 10
 }
 
 # Application definition
